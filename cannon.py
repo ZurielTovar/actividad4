@@ -73,8 +73,8 @@ def move():
     for target in targets:
         if not inside(target):
             target.x = 200
-
-    ontimer(move, 50)
+#Esta línea hizo que el tiempo de espera fuera menor, con lo cual se pudo acelerar el juego (se cambio de 50 a 10)
+    ontimer(move, 10)
 
 
 setup(420, 420, 370, 0)
