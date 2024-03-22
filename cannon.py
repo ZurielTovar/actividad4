@@ -59,7 +59,7 @@ def move():
 
     if inside(ball):
         speed.y -= 0.35
-        ball.move(speed)
+        ball.move(speed)   
 
     dupe = targets.copy()
     targets.clear()
@@ -72,7 +72,7 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
+            target.x = 200
 
     ontimer(move, 50)
 
